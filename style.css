@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2d2d; /* Dark background for a luxurious feel */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* Gold, red, and blue gradient */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fdbb2d; /* Gold hover effect */
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fdbb2d; /* Gold for section titles */
+    font-weight: bold;
+}
+
+h3, h4 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    color: #e0e0e0;
+}
+
+/* Product Grid */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.category {
+    padding: 20px;
+    background: #333; /* Darker background for categories */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category a {
+    text-decoration: none;
+    color: #fdbb2d; /* Gold links */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    margin-top: 20px;
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow around images */
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h4, .product h3 {
+    margin-top: 15px;
+    color: #fdbb2d;
+}
+
+/* Tanaman, Kayu, and Ikan Sections */
+#tanaman .product, #kayu .product, #ikan .product {
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+#tanaman .product, #kayu .product, #ikan .product {
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.product h3 {
+    font-size: 1.6em;
+    color: #fdbb2d; /* Gold for the product titles */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a2a6c; /* Dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        margin-bottom: 20px;
+    }
+
+    .product {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .product h3, .product h4 {
+        font-size: 1.4em;
+    }
+}
